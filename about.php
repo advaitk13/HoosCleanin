@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet"><link id="new-stylesheet" rel="stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
@@ -23,7 +23,7 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script></head>
+  <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/34/7/stats.js"></script></head>
   <body>
     <!-- navbar-->
     <header class="header mb-5">
@@ -76,7 +76,11 @@
         
         
       </div>
-      <nav class="navbar navbar-expand-lg">
+        <!-- *** TOP BAR END ***-->
+        
+        
+      
+<nav class="navbar navbar-expand-lg">
         <div class="container"><a href="index.html" class="navbar-brand home"><img src="img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
           <div class="navbar-buttons">
             <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
@@ -91,7 +95,7 @@
               <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaner<b class="caret"></b></a>
                 
               </li>
-              <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Finding a Cleaning Job<b class="caret"></b></a>
+              <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Apply to be a Cleaner<b class="caret"></b></a>
                 
               </li>
             </ul>
@@ -102,8 +106,7 @@
             </div>
           </div>
         </div>
-      </nav>
-      <div id="search" class="collapse">
+      </nav>      <div id="search" class="collapse">
         <div class="container">
           <form role="search" class="ml-auto">
             <div class="input-group">
@@ -120,74 +123,56 @@
       <div id="content">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <div id="main-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
-                
-                
-                
-                
-              <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2784px, 0px, 0px); transition: all 0s ease 0s; width: 3712px;"><div class="owl-item" style="width: 928px;"><div class="item"><img src="img/frontpage1.jpg" alt="" class="img-fluid"></div></div><div class="owl-item" style="width: 928px;"><div class="item"><img src="img/frontpage2.jpg" alt="" class="img-fluid"></div></div><div class="owl-item" style="width: 928px;"><div class="item"><img src="img/frontpage3.jpg" alt="" class="img-fluid"></div></div><div class="owl-item active" style="width: 928px;"><div class="item"><img src="img/frontpage4.jpg" alt="" class="img-fluid"></div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div><div class="owl-thumbs"></div></div>
-              <!-- /#main-slider-->
+            <div class="col-lg-12">
+              <!-- breadcrumb-->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li aria-current="page" class="breadcrumb-item active">About Us</li>
+                </ol>
+              </nav>
             </div>
-          </div>
-        </div>
-        <!--
-        *** ADVANTAGES HOMEPAGE ***
-        _________________________________________________________
-        -->
-        
-        <!-- /#advantages-->
-        <!-- *** ADVANTAGES END ***-->
-        <!--
-        *** HOT PRODUCT SLIDESHOW ***
-        _________________________________________________________
-        -->
-        
-        <!--
-        *** GET INSPIRED ***
-        _________________________________________________________
-        -->
-        
-        <!-- *** GET INSPIRED END ***-->
-        <!--
-        *** BLOG HOMEPAGE ***
-        _________________________________________________________
-        -->
-        <div class="box text-center">
-          <div class="container">
-            <div class="col-md-12">
-              <h3 class="text-uppercase">Hoos Gonna Clean Your Room</h3>
-              <p class="lead mb-0">Many college students have limited to clean their messy houses and apartments. In order to replace inflexible and costly professional cleaning services, we created a medium for connecting people in the Charlottesville community to clean for one another. Our easy-to-use website allows both students and non-students to pay each other for cleaning jobs on an as-needed basis. Check out our About Us page to learn more!</p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="col-md-12">
-            <div id="blog-homepage" class="row">
-              <div class="col-sm-6">
-                <div class="post">
-                  <h4><a href="">Hoos Cleaning?</a></h4>
-                  
-                  <hr>
-                  <p class="intro">Find one of your fellow students to clean your house/apartment for a reasonable price!</p>
-                  <p class="read-more"><a href="" class="btn btn-primary">Continue</a></p>
+            <div class="col-lg-3">
+              <!--
+              *** PAGES MENU ***
+              _________________________________________________________
+              -->
+              <div class="card sidebar-menu mb-4">
+                <div class="card-header">
+                  <h3 class="h4 card-title">Pages</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="nav nav-pills flex-column">
+                    <li><a href="text.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact page</a>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="post">
-                  <h4><a href="">Hoos House?</a></h4>
-                  
-                  <hr>
-                  <p class="intro">Find a student's apartment/house to clean to make some cash on the side!</p>
-                  <p class="read-more"><a href="" class="btn btn-primary">Continue</a></p>
-                </div>
+              <!-- *** PAGES MENU END ***-->
+              
+            </div>
+            <div class="col-lg-9">
+              <div id="text-page" class="box">
+                <h1>ABOUT US</h1>
+                <p class="lead">We are an organization that strives to provide a platform for Hoos to help other Hoos!</p>
+                <p><strong>Our Goal: </strong>Our goal is to help students find a cheap and easy way to clean up after their fun and to also help students make some quick and easy cash on the side. </p>
+                <h2>How It Works</h2>
+                <ol>
+                  <li>If you have a mess you want cleaned, submit an order by clicking on "Find a Cleaner" at the top of the site to find someone to help you out soon</li>
+                  <li>If you want to make some money, click on apply to be a cleaner, set your prices and hours of avaliablity, enter your phone number, and wait for a job</li>
+                </ol>
+                <blockquote class="blockquote">
+                  <p>Anyone who is a UVA student or faculty member can use our application. Private residences only. We are looking to expand to other locations, reccomend areas by contacting us!</p>
+                </blockquote>
+                
+                
+                <hr>
+                
+                
               </div>
             </div>
-            <!-- /#blog-homepage-->
+            <!-- /.col-lg-9-->
           </div>
         </div>
-        <!-- /.container-->
-        <!-- *** BLOG HOMEPAGE END ***-->
       </div>
     </div>
     <!--
@@ -227,5 +212,5 @@
     <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/front.js"></script>
-  <!--Comment for testing github changes-->
+  
 </body></html>
