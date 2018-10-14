@@ -227,5 +227,5 @@
     <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/front.js"></script>
-  
+  <!--Comment for testing github changes-->
 </body></html>
