@@ -203,13 +203,13 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="first name">Firstname</label>
+                        <label for="first name">First Name</label>
                         <input id="firstname" type="text" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label for="lastname">Lastname</label>
+                        <label for="lastname">Last Name</label>
                         <input id="lastname" type="text" class="form-control">
                       </div>
                     </div>
