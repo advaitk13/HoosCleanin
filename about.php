@@ -40,8 +40,8 @@
             <div class="col-lg-6 text-center text-lg-right" style="position:absolute; left:525px;">
                   <ul class="menu list-inline mb-0">
                     <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                    <li class="list-inline-item"><a href="register.html">Sign Up</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                    <li class="list-inline-item"><a href="register.php">Sign Up</a></li>
+                    <li class="list-inline-item"><a href="contact.php">Contact</a></li>
                   </ul>
             </div>
             
@@ -67,7 +67,7 @@
                   </p>
                 </form>
                 <p class="text-center text-muted">Not registered yet?</p>
-                <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                <p class="text-center text-muted"><a href="register.php"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
               </div>
             </div>
           </div>
@@ -81,15 +81,15 @@
         
       
 <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="index.html" class="navbar-brand home"><img src="img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
+        <div class="container"><a href="index.php" class="navbar-brand home"><img src="img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
           <div class="navbar-buttons">
             <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
             <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
           </div>
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-              <li class="nav-item"><a href="text.html" class="nav-link active">About US</a>
+              <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="about.php" class="nav-link active">About US</a>
                 
               </li>
               <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaner<b class="caret"></b></a>
@@ -143,8 +143,8 @@
                 </div>
                 <div class="card-body">
                   <ul class="nav nav-pills flex-column">
-                    <li><a href="text.html" class="nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact page</a>
+                    <li><a href="about.php" class="nav-link">About Us</a></li>
+                    <li><a href="contact.php" class="nav-link">Contact page</a>
                 </div>
               </div>
               <!-- *** PAGES MENU END ***-->
