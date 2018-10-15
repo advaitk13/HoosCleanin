@@ -154,12 +154,12 @@
               <div id="text-page" class="box">
                 <h1>ABOUT US</h1>
                 <p class="lead">We are an organization that strives to provide a platform for Hoos to help other Hoos!</p>
-                <p><strong>Our Goal: </strong>Our goal is to help students find a cheap and easy way to clean up after their fun and to also help students make some quick and easy cash on the side. </p>
+                <p><strong>Our Goal: </strong>Our goal is to help students access cheap, flexible cleaning services and find job oppurtunites. </p>
                 <h2>How It Works</h2>
-                <ol>
-                  <li>If you have a mess you want cleaned, submit an order by clicking on "Find a Cleaner" at the top of the site to find someone to help you out soon</li>
-                  <li>If you want to make some money, click on apply to be a cleaner, set your prices and hours of avaliablity, enter your phone number, and wait for a job</li>
-                </ol>
+                <ul>
+                  <li>To have your place cleaned, click on "Find A Cleaner" to post your custom cleaning needs. </li>
+                  <li>To find available cleaning jobs, click on "Find A Cleaning Job.</li>
+                </ul>
                 <blockquote class="blockquote">
                   <p>Anyone who is a UVA student or faculty member can use our application. Private residences only. We are looking to expand to other locations, reccomend areas by contacting us!</p>
                 </blockquote>

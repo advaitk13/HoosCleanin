@@ -91,7 +91,7 @@
                   <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaner<b class="caret"></b></a>
 
                   </li>
-                  <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Finding a Cleaning Job<b class="caret"></b></a>
+                  <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaning Job<b class="caret"></b></a>
 
                   </li>
                 </ul>
@@ -157,7 +157,7 @@
               <div class="container">
                 <div class="col-md-12">
                   <h3 class="text-uppercase">Hoos Gonna Clean Your Room</h3>
-                  <p class="lead mb-0">Many college students have limited to clean their messy houses and apartments. In order to replace inflexible and costly professional cleaning services, we created a medium for connecting people in the Charlottesville community to clean for one another. Our easy-to-use website allows both students and non-students to pay each other for cleaning jobs on an as-needed basis. Check out our About Us page to learn more!</p>
+                  <p class="lead mb-0">Many college students have limited to clean their messy houses and apartments. In order to replace inflexible and costly professional cleaning services, we created a medium for connecting people in the UVA community to clean for one another. Our easy-to-use website allows students to pay each other for cleaning jobs on an as-needed basis. Check out our About Us page to learn more!</p>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@
                       <h4><a href="">Hoos Cleaning?</a></h4>
 
                       <hr>
-                      <p class="intro">Find one of your fellow students to clean your house/apartment for a reasonable price!</p>
+                      <p class="intro">Get your place cleaned for a reasonable price!</p>
                       <p class="read-more"><a href="" class="btn btn-primary">Continue</a></p>
                     </div>
                   </div>
@@ -178,7 +178,7 @@
                       <h4><a href="">Hoos House?</a></h4>
 
                       <hr>
-                      <p class="intro">Find a student's apartment/house to clean to make some cash on the side!</p>
+                      <p class="intro">Search for cleaning jobs and make some money!</p>
                       <p class="read-more"><a href="" class="btn btn-primary">Continue</a></p>
                     </div>
                   </div>
