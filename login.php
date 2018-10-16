@@ -1,6 +1,6 @@
 <?php
 //    session_start(); // Starting Session
-    $error = "FUCK";
+    $error = "";
     // Check connection
     if ($conn->connect_error) 
     {
