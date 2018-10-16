@@ -1,3 +1,10 @@
+    <?php
+    include('login.php'); // Includes Login Script
+    
+    if(isset($_SESSION['login_user'])){
+    header("location: profile.php");
+    }
+    ?>
     <html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
