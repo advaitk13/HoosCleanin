@@ -114,5 +114,5 @@ if(isset($seven) && isset($two))
    }
 
   $conn->close();
-  header("location: register.php");
+  header("location: register.php", $error);
 ?>
