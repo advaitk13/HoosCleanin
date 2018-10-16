@@ -1044,7 +1044,7 @@ h1 {
   color: #4fbfa8;
 }
 
-#content #blog-listing .post .intro, #content #blog-homepage .post .intro {
+#content #blog-listing .post , #content #blog-homepage .post  {
   text-align: left;
 }
 
@@ -3022,4 +3022,20 @@ code {
 
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #6c757d;
+}
+
+#the_team {
+
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 25px!important;
+    width: 80%;
+}
+
+.intro {
+    
+    padding-left: "40px" !important;
+    padding-right: "40px" !important;
+    
 }

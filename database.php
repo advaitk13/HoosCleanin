@@ -43,17 +43,14 @@ if(isset($seven) && isset($two))
     $shitead = ("shithead");
     if($count > 0)
     {
-      $error = ("UserName or Email already exists");
+      $error = ("Username or Email already exists");
+      echo($error);
     }
     else
     {
         $sql = "INSERT INTO siteUsers (name, email, Address, City, state, zcode, username, password)
         VALUES ('$one', '$two', '$three','$four','$five','$six','$seven','$eight')";
     }
-  }
-  else
-  {
-    $error = "Username or Password is invalid";
   }
   
   /*
@@ -114,5 +111,5 @@ if(isset($seven) && isset($two))
    }
 
   $conn->close();
-  header("location: register.php", $error);
+  //header("location: register.php");
 ?>

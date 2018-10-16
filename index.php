@@ -176,7 +176,7 @@
                       <h4><a href="">Hoos Cleaning?</a></h4>
 
                       <hr>
-                      <p class="intro">Get your place cleaned for a reasonable price!</p>
+                      <p class="intro" text-align = "center">Get your place cleaned for a reasonable price!</p>
                       <p class="read-more"><a href="" class="btn btn-primary">Continue</a></p>
                     </div>
                   </div>
@@ -185,7 +185,7 @@
                       <h4><a href="">Hoos House?</a></h4>
 
                       <hr>
-                      <p class="intro">Search for cleaning jobs and make some money!</p>
+                      <p class="intro" text-align = "center">Search for cleaning jobs and make some money!</p>
                       <p class="read-more"><a href="" class="btn btn-primary">Continue</a></p>
                     </div>
                   </div>

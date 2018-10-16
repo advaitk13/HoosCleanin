@@ -5,3 +5,12 @@
 	font-style: oblique;
 	font-variant: small-caps;
 }
+
+#the_team {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 80%;
+}
