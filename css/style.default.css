@@ -1044,7 +1044,7 @@ h1 {
   color: #4fbfa8;
 }
 
-#content #blog-listing .post .intro, #content #blog-homepage .post .intro {
+#content #blog-listing .post , #content #blog-homepage .post  {
   text-align: left;
 }
 
@@ -3026,9 +3026,13 @@ code {
 
 #the_team {
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 25px!important;
     width: 80%;
+}
+
+.intro {
+    text-align: "center" !important;
 }
