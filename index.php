@@ -164,8 +164,26 @@
               <div class="container">
                 <div class="col-md-12">
                   <h3 class="text-uppercase">Hoos Gonna Clean Your Room</h3>
-                  <p class="lead mb-0">Many college students have limited to clean their messy houses and apartments. In order to replace inflexible and costly professional cleaning services, we created a medium for connecting people in the UVA community to clean for one another. Our easy-to-use website allows students to pay each other for cleaning jobs on an as-needed basis. Check out our About Us page to learn more!</p>
                 </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="col-md-12">
+                <div id="blog-homepage" class="row">
+                  <div class="col-sm-6">
+                    <div class="post">
+                      <h3 class="text-uppercase">The Issue of Time</h3>
+                      <p class="intro">Many college students have limited time to clean their messy houses and apartments. In order to replace inflexible professional cleaning services, we created a medium for connecting people in the UVA community to clean for one another.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="post">
+                      <h3 class="text-uppercase">The Issue of Cost</h3>
+                      <p class="intro">Our easy-to-use website allows students to pay each other for cleaning jobs on an as-needed basis. Not only are students able to save on lower cleaning costs, but other students can search and find jobs to make extra cash on the side! </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /#blog-homepage-->
               </div>
             </div>
             <div class="container">
