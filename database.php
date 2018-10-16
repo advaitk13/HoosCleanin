@@ -1,5 +1,5 @@
 <?php
-  $error='shithead';
+  $error='';
   $servername = "localhost";
   $username = "advait";
   $password = " ";
