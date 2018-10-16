@@ -1,3 +1,9 @@
+<?php
+include('login.php'); // Includes Login Script
+if(isset($_SESSION['login_user'])){
+#header("location: profile.php");
+}
+?>
 <html><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +16,7 @@
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <!-- Google fonts - Roboto -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
     <!-- owl carousel-->
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
@@ -136,22 +142,22 @@
                 <p>With registration with us a great cleaning service, easy money, and much more opens to you! The whole process will not take you more than a minute!</p>
                 <p class="text-muted">If you have any questions, please feel free to <a href="contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
                 <hr>
-                <form action="" method="post">
+                <form action="database.php" method="post">
                   <div class="form-group">
                     <label for="name">Name</label>
-                    <input id="name" type="text" class="form-control" required pattern = "[a-zA-Z\-'\s]+">
+                    <input id="name" name ="name" type="text" class="form-control" required pattern = "[a-zA-Z\-'\s]+">
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" required pattern = "^[^@\s]+@[^@\s]+\.[^@\s]+$">
+                    <input id="email" name = "email" type="email" class="form-control" required pattern = "^[^@\s]+@[^@\s]+\.[^@\s]+$">
                   </div>
                   <div class="form-group">
                     <label for="address">Address</label>
-                    <input id="address" type="text" class="form-control" required pattern = "^[a-zA-Z0-9,. ]*$">
+                    <input id="address" name = "Address" type="text" class="form-control" required pattern = "^[a-zA-Z0-9,.\- ]*$">
                   </div>
                   <div class="form-group">
                     <label for="city">City</label>
-                    <input id="city" type="text" class="form-control" required pattern = "[a-zA-Z\-'\s]+">
+                    <input id="city" name = "City" type="text" class="form-control" required pattern = "[a-zA-Z\-'\s]+">
                   </div>
                   <div class="form-group">
                     <label for="state" class="col-sm-2 control-label">State</label>
@@ -215,39 +221,45 @@
                   </div>
                   <div class="form-group">
                     <label for="zip">Zip Code</label>
-                    <input id="zip" type="text" class="form-control" required pattern = "^[0-9]{5}(?:-[0-9]{4})?$">
+                    <input id="zip" name = "zcode" type="text" class="form-control" required pattern = "^[0-9]{5}(?:-[0-9]{4})?$">
                   </div>
                   <div class="form-group">
                     <label for="username">Username</label>
-                    <input id="username" type="text" class="form-control" required pattern = "^[a-zA-Z0-9_]{5,20}$">
+                    <input id="username" name = "username" type="text" class="form-control" required pattern = "^[a-zA-Z0-9_]{5,20}$">
                   </div>
                   <div class="form-group">
                     <label for="password">Password</label>
-                    <input id="password" type="password" class="form-control" required>
+                    <input id="password" name = "password" type="password" class="form-control" required>
                   </div>
                   <div class="text-center">
+                    <div>
+                    <span><?php echo($error); ?></span>
+                    </div>
                     <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
                   </div>
                 </form>
               </div>
+
             </div>
+
             <div class="col-lg-6">
               <div class="box">
                 <h1>Login</h1>
-                <p class="lead">Already our customer?</p>
+                <p class="lead">Already a Member?</p>
                 
                 <hr>
-                <form action="" method="post">
+                <form action="login.php" method="post">
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" class="form-control">
+                    <label for="username">Username</label>
+                    <input id="user" name="user" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="password">Password</label>
-                    <input id="password" type="password" class="form-control">
+                    <input id="pass" name = "pass" type="password" class="form-control">
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                   <!-- <button><input name="submit" type="submit" value=" Login "class="btn btn-primary"><i class="fa fa-sign-in"></button> -->
+                    <button name = "submit" type="submit" value="Login" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
                   </div>
                 </form>
               </div>
@@ -293,5 +305,6 @@
     <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/front.js"></script>
+
   
 </body></html>
