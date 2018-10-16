@@ -1,8 +1,57 @@
 <?php 
-include('login.php'); // Includes Login Script
-if(isset($_SESSION['login_user'])){
-#header("location: profile.php");
-}
+  $error='';
+  $servername = "localhost";
+  $username = "advait";
+  $password = " ";
+  $dbname = "hooscleanin";
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) 
+  {
+    die("Connection failed: " . $conn->connect_error);
+  } 
+  $sql = "SELECT Name, email, Address, City, state, zcode, username, password";
+  $result = $conn->query($sql);
+  
+  $one = $_REQUEST["name"];
+  $one= stripslashes($one);
+  $two = $_REQUEST["email"];
+  //$two= stripslashes($two);
+  $three = $_REQUEST["Address"];
+  $three= stripslashes($three);
+  $four = $_REQUEST["City"];
+  $four= stripslashes($four);
+  $five = $_REQUEST["state"];
+  $five= stripslashes($five);
+  $six = $_REQUEST["zcode"];
+  $six= stripslashes($six);
+  $seven = $_REQUEST["username"];
+  $seven= stripslashes($seven);
+  $eight = $_REQUEST["password"];
+  $eight= stripslashes($eight);
+  $eight = md5($eight);
+//
+if(isset($seven) && isset($two))
+  {
+    #$user = $_POST['username'];
+    #$email = $_POST['email'];
+    
+    $query = ("SELECT * FROM siteUsers WHERE username='$seven' OR email='$two'");
+    $check =  $conn->query($query);
+    $count = mysqli_num_rows($check);
+    $shitead = ("shithead");
+    if($count > 0)
+    {
+      $error = ("Username or Email already exists");
+    }
+    else
+    {
+        $sql = "INSERT INTO siteUsers (name, email, Address, City, state, zcode, username, password)
+        VALUES ('$one', '$two', '$three','$four','$five','$six','$seven','$eight')";
+    }
+  }
+  $conn->close();
 ?>
 <html><head>
     <meta charset="utf-8">
@@ -142,22 +191,26 @@ if(isset($_SESSION['login_user'])){
                 <p>With registration with us a great cleaning service, easy money, and much more opens to you! The whole process will not take you more than a minute!</p>
                 <p class="text-muted">If you have any questions, please feel free to <a href="contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
                 <hr>
-                <form action="database.php" method="post">
+                <form action="" method="post">
                   <div class="form-group">
                     <label for="name">Name</label>
-                    <input id="name" name ="name" type="text" class="form-control" required pattern = "[a-zA-Z\-'\s]+">
+                    <input id="name" name ="name" type="text" class="form-control" placeholder = "John Doyle" required pattern = "[a-zA-Z\-'\s]+">
+                    <p style= "font-size:10px">Letters, dashes, apostrophes</p>
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" name = "email" type="email" class="form-control" required pattern = "^[^@\s]+@[^@\s]+\.[^@\s]+$">
+                    <input id="email" name = "email" type="email" class="form-control" placeholder = "John.Doyle@gmail.com" required pattern  = "^[^@\s]+@[^@\s]+\.[^@\s]+$">
+                    <p style= "font-size:10px">Valid email format</p>
                   </div>
                   <div class="form-group">
                     <label for="address">Address</label>
-                    <input id="address" name = "Address" type="text" class="form-control" required pattern = "^[a-zA-Z0-9,.\- ]*$">
+                    <input id="address" name = "Address" type="text" class="form-control" placeholder = "1234 Example St." required pattern  = "^[a-zA-Z0-9,.\-' ]*$">
+                    <p style= "font-size:10px">Letters, numbers, commas, periods, dashes, apostrophes</p>
                   </div>
                   <div class="form-group">
                     <label for="city">City</label>
-                    <input id="city" name = "City" type="text" class="form-control" required pattern = "[a-zA-Z\-'\s]+">
+                    <input id="city" name = "City" type="text" class="form-control" placeholder = "Charlottesville" required pattern = "[a-zA-Z\-'\s]+">
+                    <p style= "font-size:10px">Letters, dashes, apostrophes</p>
                   </div>
                   <div class="form-group">
                     <label for="state" class="col-sm-2 control-label">State</label>
@@ -221,19 +274,22 @@ if(isset($_SESSION['login_user'])){
                   </div>
                   <div class="form-group">
                     <label for="zip">Zip Code</label>
-                    <input id="zip" name = "zcode" type="text" class="form-control" required pattern = "^[0-9]{5}(?:-[0-9]{4})?$">
+                    <input id="zip" name = "zcode" type="text" class="form-control" placeholder = "00000" required pattern = "^[0-9]{5}(?:-[0-9]{4})?$">
+                    <p style= "font-size:10px">5 or 9 digit zip code</p>
                   </div>
                   <div class="form-group">
                     <label for="username">Username</label>
-                    <input id="username" name = "username" type="text" class="form-control" required pattern = "^[a-zA-Z0-9_]{5,20}$">
+                    <input id="username" name = "username" type="text" class="form-control" placeholder = "johndoyle123" required pattern = "^[a-zA-Z0-9_]{5,20}$">
+                    <p style= "font-size:10px">5-20 Characters, no special characters</p>
                   </div>
                   <div class="form-group">
                     <label for="password">Password</label>
-                    <input id="password" name = "password" type="password" class="form-control" required>
+                    <input id="password" name = "password" type="password" class="form-control" required pattern = "{5,20}">
+                    <p style= "font-size:10px">5-20 Characters</p>
                   </div>
                   <div class="text-center">
                     <div>
-                    <span><?php echo($error); ?></span>
+                    <span style="color:red;"><?php echo($error); ?></span>
                     </div>
                     <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
                   </div>

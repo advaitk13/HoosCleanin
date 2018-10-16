@@ -1,5 +1,5 @@
 <?php
-  $error='';
+  $error='shithead';
   $servername = "localhost";
   $username = "advait";
   $password = " ";
@@ -111,5 +111,5 @@ if(isset($seven) && isset($two))
    }
 
   $conn->close();
-  //header("location: register.php");
+  header("location: register.php");
 ?>
