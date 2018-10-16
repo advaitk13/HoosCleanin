@@ -154,7 +154,19 @@
               <div id="text-page" class="box">
                 <h1>ABOUT US</h1>
                 <p class="lead">We are an organization that strives to provide a platform for Hoos to help other Hoos!</p>
-                <p><strong>Our Goal: </strong>Our goal is to help students access cheap, flexible cleaning services and find job oppurtunites. </p>
+                  
+                  <div>
+                  <img src="img/staff.jpg" id="the_team">
+                  </div>
+                  
+                  <h2>Our History</h2>
+                  <p>
+                     Advait Kulkarni, Alex Prosak, and Elliot Murdock started HoosCleanin when they were students at UVA. Each one had experienced cosntant difficulty with keeping their living spaces tidy. Using their backgrounds in CS, they decided to start an online business to fill a need in an unpopulated market. Since its founding, HoosCleanin has continously provided a medium for hundreds of students all around the University of Virginia.
+                  
+                  </p>
+                  
+                <h2>Our Goal</h2>
+                Our goal is to help students access cheap, flexible cleaning services and find job oppurtunites. </p>
                 <h2>How It Works</h2>
                 <ul>
                   <li>To have your place cleaned, click on "Find A Cleaner" to post your custom cleaning needs. </li>
