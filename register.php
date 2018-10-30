@@ -1,4 +1,7 @@
 <?php 
+  use PHPMailer\PHPMailer\PHPMailer;
+  require 'vendor/autoload.php';
+  
   $error='';
   $servername = "localhost";
   $username = "advait";
@@ -17,7 +20,7 @@
   $one = $_REQUEST["name"];
   $one= stripslashes($one);
   $two = $_REQUEST["email"];
-  //$two= stripslashes($two);
+  $two= stripslashes($two);
   $three = $_REQUEST["Address"];
   $three= stripslashes($three);
   $four = $_REQUEST["City"];
@@ -34,13 +37,9 @@
 //
 if(isset($seven) && isset($two))
   {
-    #$user = $_POST['username'];
-    #$email = $_POST['email'];
-    
     $query = ("SELECT * FROM siteUsers WHERE username='$seven' OR email='$two'");
     $check =  $conn->query($query);
     $count = mysqli_num_rows($check);
-    $shitead = ("shithead");
     if($count > 0)
     {
       $error = ("Username or Email already exists");
@@ -49,7 +48,39 @@ if(isset($seven) && isset($two))
     {
         $sql = "INSERT INTO siteUsers (name, email, Address, City, state, zcode, username, password)
         VALUES ('$one', '$two', '$three','$four','$five','$six','$seven','$eight')";
+        try
+        {
+          $mail = new PHPMailer(true);
+          $mail->IsSMTP(); // enable SMTP
+          $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
+          $mail->SMTPAuth = true; // authentication enabled
+          $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+          $mail->Host = "smtp.gmail.com";
+          $mail->Port = 587; // or 587
+          $mail->IsHTML(true);
+          $mail->Username = "hooscleanin@gmail.com";
+          $mail->Password = "Boby1234";
+          $mail->SetFrom("hooscleanin@gmail.com");
+          $mail->Subject = "Welcome to HoosCleanin!";
+          $mail->Body = "Hello $one, and Thank You for registering with HoosCleanin! We hope you find our services to be extraordinary! Sincerly, HoosCleanin";
+          $mail->AddAddress($two);
+        
+           if(!$mail->Send()) 
+           {
+             // echo "Mailer Error: " . $mail->ErrorInfo;
+           } 
+          header("location: payment.php");
+        }
+        catch (phpmailerException $e) 
+        {
+        } 
+        catch (Exception $e) 
+        {
+        }
     }
+  }
+  if ($conn->query($sql) === TRUE)
+  {
   }
   $conn->close();
 ?>
@@ -314,7 +345,6 @@ if(isset($seven) && isset($two))
                     <input id="pass" name = "pass" type="password" class="form-control">
                   </div>
                   <div class="text-center">
-                   <!-- <button><input name="submit" type="submit" value=" Login "class="btn btn-primary"><i class="fa fa-sign-in"></button> -->
                     <button name = "submit" type="submit" value="Login" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
                   </div>
                 </form>
