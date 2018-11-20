@@ -7,6 +7,7 @@
                 
       $json_feed = json_decode($json_data);
       $json_feedg = json_decode($json_datag);
+      include("session.php");
 ?>
 <html class="gr__hooscleanin-advait-13_c9users_io"><head>
     <meta charset="utf-8">
@@ -46,12 +47,13 @@
           <div class="row">
             <div class="toptab">
               <div class="col-lg-6 text-center text-lg-left">HoosCleanin</div>
+               <?php echo $test ?>
             </div>
             <div class="col-lg-6 text-center text-lg-right" style="position:absolute; left:525px;">
                   <ul class="menu list-inline mb-0">
-                    <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                    <li class="list-inline-item"><a href="register.php">Sign Up</a></li>
-                    <li class="list-inline-item"><a href="contact.php">Contact</a></li>
+                        <li class="list-inline-item"><a href="register.php">Log in/Sign Up</a></li>
+                        <li class="list-inline-item"><a href="logout.php">Log Out</a></li>
+                        <li class="list-inline-item"><a href="contact.php">Contact</a></li>
                   </ul>
             </div>
             
@@ -94,8 +96,8 @@
           </div>
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
-              <li class="nav-item"><a href="about.php" class="nav-link active">About US</a>
+              <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.php" class="nav-link">About US</a>
                 
               </li>
               <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaner<b class="caret"></b></a>
@@ -108,7 +110,7 @@
             <div class="navbar-buttons d-flex justify-content-end">
               <!-- /.nav-collapse-->
               <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
-              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>0 items in cart</span></a></div>
+              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="member.php" class="btn btn-primary navbar-btn"><span>Dashboard</span></a></div>
             </div>
           </div>
         </div>
@@ -161,6 +163,8 @@
                       <h3 class="text">Pick an option and pay with BitPay!</h3>
                       <button onclick="updateBasic();" type="button" class="btn btn-default">Basic Membership</button>
                 <button onclick="updateGold();" type="button" class="btn btn-primary">Gold Membership</button>
+                <button id = "discount" onclick="updatePromoPrice();" type="button" class="btn btn-success" style="display:none">Discount Gold</button>
+                <p id = "discountmessage" style="display:none"> - Gold Membership at the price of a Basic Membership!</p>
                 
                 <p></p>
 
@@ -179,11 +183,35 @@
                     function updateBasic(){
                         document.getElementById("data").value = "v0BGPkhuQEjZIdeSYOJXP6EqInRsAHkhnEXbpvCTnmb2XPqR2eUZHDnGX1RmOe129n87EKKM1RN4atvZoc7GFx1ok7p4JWkoQBFzNUsLOFi4ZFITYEgEuWIh9o0kzyVFuohzd0dvbkv3++oYezacrPKqlNY9yIcUGIA62JsO9rtBxM/uXrTSLAz+wivnSZnRRvC+/K4hdCrxDTigqvtvgw==";
                     }
+                    function updatePromoPrice(){
+                        document.getElementById("data").value = "v0BGPkhuQEjZIdeSYOJXP6EqInRsAHkhnEXbpvCTnmb2XPqR2eUZHDnGX1RmOe12Xx7bjNcIYkuSo9g99fp1m98oLfptVivlG6VmblQuqr3Ja1W2LJtSHbnfttqofmcYD3jDt0c+j1mW+YGFF7FSmjQCUr2RHYMBEI6LsvVHkizK98ZE6rqBMnqRDeXSNgzAYZ1YEIoBudswLqjHdzrhSS2knPne2IWkgfnFecEEFsE="
+                    }
                     
                 </script>
 
                     </div>
+                    <div class="post">
+                      <p class = "lead"> Enter Promo Code</p>
+                        <input id="code" name ="code" type="text" class="form-control"  required>
+                        <button onclick="updatePromo();" type="button" class="btn btn-default">Apply</button>
+                        <p id = "wrongcode" style = "display:none">Sorry, that is not a valid promo code</p>
+                    </div>
                   </div>
+                  <script>
+                    function updatePromo(){
+                      if(document.getElementById("code").value == "GOHOOS"){
+                        document.getElementById("wrongcode").style.display = "none";
+                        document.getElementById("code").value = "";
+                        document.getElementById("discount").style.display = "inline-block";
+                        document.getElementById("discountmessage").style.display = "inline-block";
+                      }else{
+                        document.getElementById("code").value = "";
+                        document.getElementById("wrongcode").style.display = "block";
+                        document.getElementById("discount").style.display = "none";
+                        document.getElementById("discountmessage").style.display = "none";
+                      }
+                    }
+                  </script>
                   <div class="col-sm-6">
                     <div class="post">
                       <h3 class="text">Our Choices</h3>
