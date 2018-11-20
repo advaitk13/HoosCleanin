@@ -1,17 +1,33 @@
 <?php
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-$connection = mysql_connect("localhost", "advait", " ");
-// Selecting Database
-$db = mysql_select_db("hooscleanin", $connection);
+
+$servername = "localhost";
+$username = "advait";
+$password = " ";
+$dbname = "hooscleanin";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) 
+{
+    die("Connection failed: " . $conn->connect_error);
+} 
+
 session_start();// Starting Session
-// Storing Session
 $user_check=$_SESSION['login_user'];
+
+$sql = "SELECT username from siteUsers where username='$user_check'";
+$result = $conn->query($sql);
+
+
+// Selecting Database
+// Storing Session
 // SQL Query To Fetch Complete Information Of User
-$ses_sql=mysql_query("select username from login where username='$user_check'", $connection);
-$row = mysql_fetch_assoc($ses_sql);
+$row = $result->fetch_assoc();;
 $login_session =$row['username'];
-if(!isset($login_session)){
-mysql_close($connection); // Closing Connection
-header('Location: index.php'); // Redirecting To Home Page
+$test = "";
+if(($login_session) != '')
+{
+    $test = "<b id='welcome'; display:'inline-block'; >Welcome $login_session</i></b>";
 }
 ?>
