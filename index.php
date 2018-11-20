@@ -1,9 +1,5 @@
     <?php
-    include('login.php'); // Includes Login Script
-    
-    if(isset($_SESSION['login_user'])){
-    header("location: profile.php");
-    }
+    include("session.php");
     ?>
     <html><head>
         <meta charset="utf-8">
@@ -42,12 +38,13 @@
             <div class="container">
               <div class="row">
                 <div class = "toptab">
-                  <div class="col-lg-6 text-center text-lg-left">HoosCleanin</div>
-                </div>
+                  <div class="col-lg-6 text-center text-lg-left"display:"inline-block">HoosCleanin</div>
+                   <?php echo $test ?>               
+               </div>
                 <div class="col-lg-6 text-center text-lg-right" style="position:absolute; left:525px;">
                       <ul class="menu list-inline mb-0">
-                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                        <li class="list-inline-item"><a href="register.php">Sign Up</a></li>
+                        <li class="list-inline-item"><a href="register.php">Log in/Sign Up</a></li>
+                        <li class="list-inline-item"><a href="logout.php">Log Out</a></li>
                         <li class="list-inline-item"><a href="contact.php">Contact</a></li>
                       </ul>
                 </div>
@@ -91,8 +88,9 @@
               </div>
               <div id="navigation" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
-                  <li class="nav-item"><a href="about.php" class="nav-link active">About US</a>
+                  <li class="nav-item dropdown menu-large show"><a href="index.php" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item dropdown menu-large show"><a href="about.php" class="nav-link">About US</a>
 
                   </li>
                   <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaner<b class="caret"></b></a>
@@ -105,7 +103,7 @@
                 <div class="navbar-buttons d-flex justify-content-end">
                   <!-- /.nav-collapse-->
                   <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
-                  <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>0 items in cart</span></a></div>
+                  <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="member.php" class="btn btn-primary navbar-btn"><span>Dashboard</span></a></div>
                 </div>
               </div>
             </div>
