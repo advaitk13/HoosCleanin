@@ -1,7 +1,7 @@
 <?php 
   use PHPMailer\PHPMailer\PHPMailer;
   require 'vendor/autoload.php';
-  
+  include("session.php");
   $error='';
   $servername = "localhost";
   $username = "advait";
@@ -34,55 +34,100 @@
   $eight = $_REQUEST["password"];
   $eight= stripslashes($eight);
   $eight = md5($eight);
+  $nine = $_REQUEST["login_username"];
+  $nine = stripslashes($nine);
+  $ten = $_REQUEST["login_password"];
+  $ten = stripslashes($ten);
+  $ten = md5($ten);
+
 //
-if(isset($seven) && isset($two))
-  {
-    $query = ("SELECT * FROM siteUsers WHERE username='$seven' OR email='$two'");
-    $check =  $conn->query($query);
-    $count = mysqli_num_rows($check);
-    if($count > 0)
+
+if(isset($_REQUEST['login_submit']))
+{
+    session_start(); // Starting Session
+    if(isset($nine) && isset($ten))
     {
-      $error = ("Username or Email already exists");
+        $query = ("SELECT * FROM siteUsers WHERE username='$nine' AND password='$ten'");
+        $check =  $conn->query($query);
+        $count = mysqli_num_rows($check);
+
+        if ($count == 1) 
+        {
+          $_SESSION['login_user']=$nine; // Initializing Session
+          if($nine == 'alexporska23')
+          {
+            header("location: member.php");
+          }
+            header("location: member1.php");
+           // Redirecting To Other Page
+          //echo $_SESSION["login_user"];
+        }
+        else 
+        {
+          $error = "Username or Password is invalid";
+        }
+        if ($conn->query($sql) === TRUE)
+        {}
+        $conn->close();
     }
-    else
+}
+if(empty($one) || empty($two) || empty($three) || empty($four) || empty($five) || empty($six) || empty($seven) || empty($eight))
+{
+  //Do nothing
+}
+else
+{
+  if(isset($seven) && isset($two))
     {
-        $sql = "INSERT INTO siteUsers (name, email, Address, City, state, zcode, username, password)
-        VALUES ('$one', '$two', '$three','$four','$five','$six','$seven','$eight')";
-        try
+      $query = ("SELECT * FROM siteUsers WHERE username='$seven' OR email='$two'");
+      $check =  $conn->query($query);
+      $count = mysqli_num_rows($check);
+      if($count > 0)
+      {
+        $error = ("Username or Email already exists");
+      }
+      else
+      {
+          $sql = "INSERT INTO siteUsers (name, email, Address, City, state, zcode, username, password)
+          VALUES ('$one', '$two', '$three','$four','$five','$six','$seven','$eight')";
+          try
+          {
+            $mail = new PHPMailer(true);
+            $mail->IsSMTP(); // enable SMTP
+            $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
+            $mail->SMTPAuth = true; // authentication enabled
+            $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+            $mail->Host = "smtp.gmail.com";
+            $mail->Port = 587; // or 587
+            $mail->IsHTML(true);
+            $mail->Username = "hooscleanin@gmail.com";
+            $mail->Password = "Boby1234";
+            $mail->SetFrom("hooscleanin@gmail.com");
+            $mail->Subject = "Welcome to HoosCleanin!";
+            $mail->Body = "Hello $one, and Thank You for registering with HoosCleanin! We hope you find our services to be extraordinary! Sincerly, HoosCleanin";
+            $mail->AddAddress($two);
+          
+             if(!$mail->Send()) 
+             {
+               // echo "Mailer Error: " . $mail->ErrorInfo;
+             } 
+            header("location: payment.php");
+          }
+          catch (phpmailerException $e) 
+          {
+          } 
+          catch (Exception $e) 
+          {
+          }
+      }
+       if ($conn->query($sql) === TRUE)
         {
-          $mail = new PHPMailer(true);
-          $mail->IsSMTP(); // enable SMTP
-          $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
-          $mail->SMTPAuth = true; // authentication enabled
-          $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
-          $mail->Host = "smtp.gmail.com";
-          $mail->Port = 587; // or 587
-          $mail->IsHTML(true);
-          $mail->Username = "hooscleanin@gmail.com";
-          $mail->Password = "Boby1234";
-          $mail->SetFrom("hooscleanin@gmail.com");
-          $mail->Subject = "Welcome to HoosCleanin!";
-          $mail->Body = "Hello $one, and Thank You for registering with HoosCleanin! We hope you find our services to be extraordinary! Sincerly, HoosCleanin";
-          $mail->AddAddress($two);
-        
-           if(!$mail->Send()) 
-           {
-             // echo "Mailer Error: " . $mail->ErrorInfo;
-           } 
-          header("location: payment.php");
+          //
         }
-        catch (phpmailerException $e) 
-        {
-        } 
-        catch (Exception $e) 
-        {
-        }
+    $conn->close();
     }
-  }
-  if ($conn->query($sql) === TRUE)
-  {
-  }
-  $conn->close();
+}
+ 
 ?>
 <html><head>
     <meta charset="utf-8">
@@ -121,13 +166,15 @@ if(isset($seven) && isset($two))
         <div class="container">
           <div class="row">
             <div class = "toptab">
-              <div class="col-lg-6 text-center text-lg-left">HoosCleanin</div>
+              <div class="col-lg-6 text-center text-lg-left"display:"inline-block">HoosCleanin
+              </div>
+               <?php echo $test ?>
             </div>
             <div class="col-lg-6 text-center text-lg-right" style="position:absolute; left:525px;">
                   <ul class="menu list-inline mb-0">
-                    <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                    <li class="list-inline-item"><a href="register.php">Sign Up</a></li>
-                    <li class="list-inline-item"><a href="contact.php">Contact</a></li>
+                        <li class="list-inline-item"><a href="register.php">Log in/Sign Up</a></li>
+                        <li class="list-inline-item"><a href="logout.php">Log Out</a></li>
+                        <li class="list-inline-item"><a href="contact.php">Contact</a></li>
                   </ul>
             </div>
             
@@ -166,12 +213,12 @@ if(isset($seven) && isset($two))
         <div class="container"><a href="index.php" class="navbar-brand home"><img src="img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
           <div class="navbar-buttons">
             <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
-            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
+            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="member.php" class="btn btn-outline-secondary navbar-toggler"></a>
           </div>
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
-              <li class="nav-item"><a href="about.php" class="nav-link active">About US</a>
+              <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.php" class="nav-link">About US</a>
                 
               </li>
               <li class="nav-item dropdown menu-large show"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link" aria-expanded="true">Find a Cleaner<b class="caret"></b></a>
@@ -184,7 +231,7 @@ if(isset($seven) && isset($two))
             <div class="navbar-buttons d-flex justify-content-end">
               <!-- /.nav-collapse-->
               <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
-              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>0 items in cart</span></a></div>
+              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="member.php" class="btn btn-primary navbar-btn"><span>Dashboard</span></a></div>
             </div>
           </div>
         </div>
@@ -335,17 +382,20 @@ if(isset($seven) && isset($two))
                 <p class="lead">Already a Member?</p>
                 
                 <hr>
-                <form action="login.php" method="post">
+                <form action="" method="post">
                   <div class="form-group">
-                    <label for="username">Username</label>
-                    <input id="user" name="user" type="text" class="form-control">
+                    <label for="login_username">Username</label>
+                    <input id="login_username" name="login_username" type="text" class="form-control">
                   </div>
                   <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="pass" name = "pass" type="password" class="form-control">
+                    <label for="login_password">Password</label>
+                    <input id="login_password" name = "login_password" type="password" class="form-control">
                   </div>
                   <div class="text-center">
-                    <button name = "submit" type="submit" value="Login" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                    <div>
+                    <span style="color:red;"><?php echo($error); ?></span>
+                    </div>
+                    <button name = "login_submit" type="submit" value="Login" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
                   </div>
                 </form>
               </div>
